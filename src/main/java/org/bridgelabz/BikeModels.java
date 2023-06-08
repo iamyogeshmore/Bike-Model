@@ -13,5 +13,17 @@ public class BikeModels {
         for (int i = 0; i < bike_list.size(); i++) {
             System.out.println(bike_list.get(i));
         }
+        ArrayList<String> oldModel = new ArrayList<String>();
+        oldModel.add("TVS");
+        oldModel.add("Hero");
+        oldModel.add("Honda");
+        bike_list.addAll(oldModel);
+        System.out.println("New size of the bike list is :" + bike_list.size());
+        System.out.println("*** Bike list with old model ***");
+        for (int i = 0; i < oldModel.size(); i++) {
+            System.out.println(bike_list.get(i));
+        }
+        bike_list.addAll(oldModel);
+        System.out.println("Combine bike model list: " + bike_list);
     }
 }
