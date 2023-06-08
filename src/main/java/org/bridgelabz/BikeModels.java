@@ -24,6 +24,14 @@ public class BikeModels {
             System.out.println(bike_list.get(i));
         }
         bike_list.addAll(oldModel);
+        System.out.println("New size od the list :" + bike_list.size());
         System.out.println("Combine bike model list: " + bike_list);
+
+        bike_list.remove("Yamaha");
+        System.out.println("*** Yamaha model removed ***");
+        System.out.println("New size od the list :" + bike_list.size());
+        for (int i = 0; i < bike_list.size(); i++) {
+            System.out.println(bike_list.get(i));
+        }
     }
 }
